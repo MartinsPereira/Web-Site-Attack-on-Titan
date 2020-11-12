@@ -120,6 +120,10 @@ img {
 .intro-serie{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.intro-serie > div{
+  margin: 0 auto;
 }
 .intro-serie > div:nth-child(1) img{
   width: 530px;
@@ -161,25 +165,25 @@ img {
 
 .section_titan{
   background: url('../img/svg/backgroundBlack.svg') no-repeat center;
-  background-size: cover;
-  height: 544px;
+  background-size: auto;
+  height: fit-content;
 }
 
 .intro-tita{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-
 .intro-tita > div:nth-child(1) p{width: 604px; font-size: 14px;letter-spacing: 1px;line-height: 27px;}
 .intro-tita > div:nth-child(1){
   margin-top: 170px;
 }
-.intro-tita > div:nth-child(2){margin-right: 50px;  }
 .ul-muralhas{
   margin-top: 70px;
   display: flex;
   justify-content: center;
   gap: 60px;
+  flex-wrap: wrap;
 }
 
 .ul-muralhas li{
@@ -290,6 +294,8 @@ img {
 .ul-execitoReal ul{
   display: flex;
   gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .ul-execitoReal ul li{
@@ -315,6 +321,7 @@ img {
 .section_trop > div{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .section_trop > div:nth-child(1) > div:nth-child(1) p{
@@ -330,6 +337,10 @@ img {
   margin-top: 180px;
   letter-spacing: .5px;
   text-align: end;
+}
+
+.section_trop > div > div{
+  margin: 0 auto;
 }
 
 .footer{
@@ -356,4 +367,58 @@ img {
   width: 175px;
   bottom: 0;
   right: 0;
+}
+
+@media (max-width: 1115px){
+  .section_trop > div:nth-child(1) > div:nth-child(1){order: 2;}
+  .section_trop > div:nth-child(1) > div:nth-child(2){order: 1;}
+}
+
+@media (max-width: 940px){ 
+  .intro-tita > div{
+    margin: 25px auto;
+  }
+  .titaFooter {
+    width: 115px;
+  }
+  .intro h1 {
+    font-size: 100px;
+  }
+  .section_titan {
+    background: #212121;
+  }
+}
+
+@media (max-width: 650px){
+  .section_trop > div > div p,.intro-tita > div:nth-child(1) p,.intro-serie > div:nth-child(2) > div:nth-child(1),
+  .intro-serie > div:nth-child(1) img {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 500px){
+  .container{
+    padding: 1px 20px;
+  }
+  .footer{
+    display: flex;
+    align-items: center;
+  }
+  .footer > div > div {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .titaFooter {
+    width: 115px;
+    display: none;
+  }
+  .intro h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 350px){
+  .slide li {
+    width: 100%;
+  }
 }
