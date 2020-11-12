@@ -1,0 +1,359 @@
+@font-face{
+  font-family: "Poppins";
+  src: url('../font/Poppins-Regular.ttf')
+}
+
+@font-face{
+  font-family: "PoppinsLight";
+  src: url('../font/Poppins-Light.ttf')
+}
+
+@font-face{
+  font-family: "PoppinsBold";
+  src: url('../font/Poppins-Bold.ttf')
+}
+
+@font-face{
+  font-family: "Attack";
+  src: url('../font/KAISG___.TTF')
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Roboto', monospace;
+  color: white;
+}
+
+body {
+  background: #171717;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px;
+}
+
+.section_margin{
+  margin: 110px 0;
+}
+
+.title{
+  color: #FF9900;
+  font-size: 30px;
+  font-family: 'PoppinsBold';
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtitle{
+  font-size: 14.5px;
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+.intro{
+  background: url('../img/backgroundTitans.jpg') no-repeat center;
+  height: 100vh;
+}
+
+.intro h1{
+  font-family: 'Attack', sans-serif, monospace, Arial, Helvetica;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: 100;
+  font-size: 136px;
+  text-align: center;
+  margin-top: 209px;
+  text-shadow: #171717 -30px 20px 3px;
+}
+
+.intro > div > div:nth-child(1)::after{
+  content: "";
+  background: url('../img/svg/grade.svg') no-repeat center;
+  background-size: cover;
+  width: 96px;
+  height: 19px;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+.intro a{
+  background: #EE3311;
+  border-radius: 9px;
+  font-family: 'Roboto', 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: .3s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.2, 1.4);
+}
+.intro a::after{
+  content: url('../img/svg/Arrow.svg');
+  margin-left: 12px;
+}
+.intro a:hover{
+  transform: scale(1.1);
+}
+.intro > div > div:nth-child(2){
+  display: flex;
+  justify-content: center;
+}
+.intro-serie{
+  display: flex;
+  justify-content: space-between;
+}
+.intro-serie > div:nth-child(1) img{
+  width: 530px;
+}
+.intro-serie > div:nth-child(2) > div:nth-child(1){
+  width: 606px;
+  margin: 35px 0 45px 0;
+  position: relative;
+}
+.intro-serie > div:nth-child(2) > div:nth-child(1)::before{
+  content: url('../img/svg/setaLeftSide.svg');
+  position: absolute;
+  left: -20px;
+  top: 40px;
+}
+
+.intro-serie > div:nth-child(2) > div:nth-child(1) p{font-size: 17px;}
+.intro-serie > div:nth-child(2) > div:nth-child(2) a{
+  color: #FF9900;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-left: 15px;
+} 
+
+.intro-serie > div:nth-child(2) > div:nth-child(2) a::after{
+  content: url('../img/svg/Arrow2.svg');
+  margin-left: 15px;
+}
+
+.intro-serie > div:nth-child(2) > div:nth-child(2) a:hover::after{
+  animation: arrowMove .7s infinite;
+}
+@keyframes arrowMove{
+  0%{margin-left: 15px;}
+  50%{margin-left: 25px;}
+  100%{margin-left: 15px;}
+}
+
+.section_titan{
+  background: url('../img/svg/backgroundBlack.svg') no-repeat center;
+  background-size: cover;
+  height: 544px;
+}
+
+.intro-tita{
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-tita > div:nth-child(1) p{width: 604px; font-size: 14px;letter-spacing: 1px;line-height: 27px;}
+.intro-tita > div:nth-child(1){
+  margin-top: 170px;
+}
+.intro-tita > div:nth-child(2){margin-right: 50px;  }
+.ul-muralhas{
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.ul-muralhas li{
+  width: 268px;
+}
+
+.ul-muralhas li img{
+  width: 200px;
+  margin: 0 auto;
+}
+
+.ul-muralhas li > div:nth-child(1)::after{
+  content: "";
+  height: 4px;
+  width: 50px;
+  background: #FF9900;
+  display: block;
+  margin: 30px auto;
+}
+
+.ul-muralhas li p{
+  text-align: center;
+  font-size: 15px;
+  margin: 0 auto;
+  font-family: 'PoppinsLight',sans-serif,'Roboto';
+  letter-spacing: .5px;
+}
+
+.ul-muralhas li:nth-child(1) p{width: 210px;}
+
+.ul-muralhas li:nth-child(3) p{width: 228px;}
+.slide-titas{
+  margin-top: 60px;
+}
+
+.slide {
+  display: flex;
+}
+
+.slide:hover {
+  will-change: transform;
+}
+
+.slide-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide li {
+  flex-shrink: 0;
+  width: 310px;
+  max-width: 800px;
+  margin: 0 40px;
+  border-radius: 4px;
+  transform: scale(0.8);
+  transition: 0.4s;
+}
+
+.slide li img {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.slide li h3{
+  text-align: center;
+  margin-top: 15px;
+  color: #FF9900;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: .3s;
+}
+
+.slide li.active h3{
+  opacity: 1;
+}
+
+.slide li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.arrow-nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 0;
+}
+
+.arrow-nav button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  width: 40px;
+  outline: none;
+  height: 40px;
+  background: #FFA127 url('../img/svg/arrowGrande.svg') center center no-repeat;
+}
+
+.arrow-nav button.prev {
+  transform: rotate(-180deg);
+}
+
+.ul-execitoReal{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.ul-execitoReal ul{
+  display: flex;
+  gap: 60px;
+}
+
+.ul-execitoReal ul li{
+  width: 281px;
+}
+
+.ul-execitoReal ul li img{
+  width: 200px;
+  margin: 0 auto;
+}
+
+.ul-execitoReal ul li h3{
+  color: #FFCC00;
+  font-size: 18px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.section_trop{
+  margin-top: 60px;
+}
+
+.section_trop > div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_trop > div:nth-child(1) > div:nth-child(1) p{
+  width: 615px;
+  font-size: 16px;
+  margin-top: 100px;
+  letter-spacing: .5px;
+}
+
+.section_trop > div:nth-child(2) > div:nth-child(2) p{
+  width: 615px;
+  font-size: 16px;
+  margin-top: 180px;
+  letter-spacing: .5px;
+  text-align: end;
+}
+
+.footer{
+  background: url('../img/svg/backgroundFooter.svg') no-repeat center;
+  background-size: cover;
+  height: 159px;
+  position: relative;
+}
+
+.footer > div > div{
+  width: 300px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 110px;
+}
+
+.footer > div > div p{
+  font-size: 17px;
+  letter-spacing: .5px;
+}
+
+.titaFooter{
+  position: absolute;
+  width: 175px;
+  bottom: 0;
+  right: 0;
+}
