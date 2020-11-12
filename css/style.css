@@ -71,6 +71,7 @@ img {
 
 .intro{
   background: url('../img/backgroundTitans.jpg') no-repeat center;
+  background-size: cover;
   height: 100vh;
 }
 
